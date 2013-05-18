@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="includes/style.css" rel="stylesheet" type="text/css" />
+
+<body> 
+<div id="wrapper">
+	<header> 
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <div class="header_top">
+      </div>
+	</header>
+	<div class="box_container">
+		<div class="box_left">
+			<div class="box_container_slider"> 
+				<div class="fadein">
+				  <img src="includes/assets/i1.png" width="256">
+				  <img src="includes/assets/i2.png" width="256"> 
+				</div>
+			</div>
+		</div> 
+		<div class="right_space"></div>
+		<div class="bg">
+			<div class="logo">
+				<img src="includes/assets/logo.png" width="170" height="80"/>
+			</div>
+			<div class="box_right">
+				<h1>Discover your network.</h1>
+				<p>
+					<span>We're launching soon on iPhone!</span> 
+					Join the first-ever location based University networking application. We help you find and meet other Students and Alumni near you, no matter where you are or where you go.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="bottom"> 
+	<h1>Available now at the University of Toronto!</h1>
+	<div id="footer"> 
+		<div class="copyright">&copy; 2013 Uni+&emsp;&emsp;Contact us at: info@uniplus.me</div> 
+	</div> 
+</div>
+
+
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 6000);
+});
+</script> 
+</body>
+</html>
