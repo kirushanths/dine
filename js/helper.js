@@ -90,7 +90,7 @@ function convert()
           {
             setupHtmlEditable(tag,text);
           }
-          else if (height > 100)
+          else if (height > 80)
           {
             setupTextAreaEditable(tag,text);
           }

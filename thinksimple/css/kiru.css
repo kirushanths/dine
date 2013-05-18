@@ -1,0 +1,127 @@
+
+/*  CSS BROWSER RESET */
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+    audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+    audio:not([controls]) { display: none; }
+    [hidden] { display: none; }
+
+    html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    body { margin: 0; font-size: 13px; line-height: 1.231; border:0; }
+    body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+    a { color: #00e; }
+    a:visited { color: #551a8b; }
+    a:hover { color: #06e; }
+    a:focus { outline: thin dotted; }
+    a:hover, a:active { outline: 0; }
+
+    abbr[title] { border-bottom: 1px dotted; }
+    b, strong { font-weight: bold; }
+    blockquote { margin: 1em 40px; }
+    dfn { font-style: italic; }
+    hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+    ins { background: #ff9; color: #000; text-decoration: none; }
+    mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+    pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+    pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+    q { quotes: none; }
+    q:before, q:after { content: ""; content: none; }
+    small { font-size: 85%; }
+    sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+    sup { top: -0.5em; }
+    sub { bottom: -0.25em; }
+    ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+    dd { margin: 0 0 0 40px; }
+    nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+    img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+    svg:not(:root) { overflow: hidden; }
+    figure { margin: 0; }
+
+    form { margin: 0; }
+    fieldset { border: 0; margin: 0; padding: 0; }
+    label { cursor: pointer; }
+    legend { border: 0; *margin-left: -7px; padding: 0; }
+    button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+    button, input { line-height: normal; *overflow: visible; }
+    table button, table input { *overflow: auto; }
+    button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+    input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+    input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+    input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+    button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+    textarea { overflow: auto; vertical-align: top; resize: vertical; }
+    input:valid, textarea:valid { }
+    input:invalid, textarea:invalid { }
+
+    table { border-collapse: collapse; border-spacing: 0; }
+    td { vertical-align: top; }
+
+/* *********************** */
+
+	a, a:visited, a:visited, a:active, a:hover { cursor:pointer; color:#1571B8; }
+
+body { font-family:'Lucida Grande'; background:#333; }
+#container { min-width:1060px; }
+
+.app_width { width:1060px; margin:0 auto; }
+	
+    /* http://matthewjamestaylor.com/blog/ultimate-2-column-left-menu-pixels.htm */
+    .colmask { position:relative; clear:both; float:left; width:100%; overflow:hidden; }
+
+    /* (left) has to equal .col1wrap and is the width of left column = left_col */
+    .leftmenu .colright { float:left; width:200%; position:relative; left:128px; }
+    /* (right) has to equal .colright and is the width of left column = left_col  */
+    .leftmenu .col1wrap { float:right; width:50%; position:relative;right:128px; }
+    /* (margin) = 0 padding 0 left_col+padding  */
+    .leftmenu .col1 { margin:0 0 0 128px; position:relative; right:100%; overflow:hidden; }
+    /* one extra pixel on width to hide double border */
+    /* (width) is left_col-2*padding and (right) is left_col-padding */
+    .leftmenu .col2 { float:left; width:128px; position:relative; right:128px; }
+
+	.clear { clear:both; }
+
+    #header { height:60px; background:#333; overflow:hidden; }
+	#logo { display:block; float:left; margin-left:25px; }
+	#img2 { height:40px; margin-top:10px; }
+
+	.img-container {
+   display: inline-block;
+   position: relative; 
+}
+
+.img-upload {  
+   position: absolute;
+   display: none; 
+   right:5px;
+   bottom:5px;
+   pointer-events:none;
+}
+.img-container:hover .img-upload{
+   display: block;
+}
+
+	nav { float:right; line-height:70px; height:70px; background:transparent; margin-right:25px; }
+	nav ul li { float: left; line-height:normal; height:20px; line-height:20px; margin-top:10px; }
+	nav ul li a { font-size: 14px; color: black;
+		text-transform:capitalize; font-weight:normal; display:block;	/* IE6, IE7 line height fix */
+		padding:8px; background-color:transparent; margin-top:0px; margin-right:10px; text-decoration:none; color:white;
+	}
+	nav ul li a:hover { color:#ccc; }
+	nav ul li a.current { background-color:#1571B8; color:white; border-radius:2px; }
+
+	#intro { background:url('../images/bg.jpg') black; height:350px; overflow:hidden; background-color:rgba(0, 0,0,0.5); }
+
+	.group_bannner_left { padding-top:170px; height:350px; color:white; background:rgba(0, 0,0,0.5); padding-left:30px; }
+	.group_bannner_left h2 { font-weight:normal; font-size:20px; color:white; float:left; clear:both; margin:0; padding-top:0px; }
+	.group_bannner_left h1 { font-weight:normal; font-size:54px; color:#ccc; float:left; font-weight:bold; }
+
+	#holder_container { background:white; }
+	#holder_content { overflow:hidden; margin:0 auto; width:1060px; padding:20px 0; }
+	#holder_content .item { width:300px; background:white; float:left; margin-right:10px; padding:15px; border:1px solid #eee; border-radius:3px; color:#666; }
+	#holder_content .item .title { font-size:20px; margin-bottom: 10px; color:#333; float:left; }
+
+	#footer { background:#333; overflow:hidden; padding:15px 25px; color:white; }
+	#FooterTwo { float:left; }
+	#FooterTree { float:left; }
+

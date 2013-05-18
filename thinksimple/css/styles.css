@@ -301,14 +301,19 @@ margin-top:50px;
 
 			
 header{
-	position: relative;
-	float:left;
+	/*position: relative;*/
+	/*float:left;*/
 	width: 100%;
-	height:100px;
-
-
+	height:70px;
 	}
 	
+
+#img2-img {
+	height:60px;
+}
+#img2 {
+	height:60px;
+}
 	
 /***************************************************
 				INTRO

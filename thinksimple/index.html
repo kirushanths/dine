@@ -8,125 +8,135 @@
   <![endif]-->
 
 <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon"/> 
-<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-<link type="text/css" href="css/css3.css" rel="stylesheet" />
-<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.pikachoose.js"></script>
-<script language="javascript">
-			$(document).ready(
-				function (){
-					$("#pikame").PikaChoose();
-				});
-		</script>
-		
-
+<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"/> -->
+<!-- <link type="text/css" href="css/css3.css" rel="stylesheet" /> -->
+<link href="../includes/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../includes/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+<link type="text/css" href="css/kiru.css" rel="stylesheet" />
 
     </head>
     <body>
-	
+
     <!--start container-->
     <div id="container">
 
-    <!--start header-->
+        <!--start header-->
 
-    <header>
- 
-    <!--start logo-->
-    <a href="#" id="logo"><img id="img2" src="images/logo.png" width="221" height="100" alt="logo"/></a>    
+        <header id="header">
 
-	<!--end logo-->
+        <div class="app_width">
+     
+        <!--start logo-->
+        <div id="logo">
+            <img id="img2" src="images/tophat.png" alt="logo"/>
+        </div>  
+
+
+    	<!--end logo-->
+    	
+       <!--start menu-->
+
+    	<nav>
+        <ul>
+        <li><a href="#" id="home_nav" class="current">Home</a>
+
+    	</li>
+        <li><a href="#" id="menu_nav">Menu</a></li>
+        <li><a href="#" id="gallery_nav">Gallery</a></li>
+        <li><a href="#" id="about_nav">Contact</a></li>
+        </ul>
+        </nav>
+    	<!--end menu-->
 	
-   <!--start menu-->
-
-	<nav>
-    <ul>
-    <li><a href="#" class="current">Home</a>
-
-	</li>
-    <li><a href="#" id="Asdf">About</a></li>
-    </ul>
-    </nav>
-	<!--end menu-->
-	
-
-    <!--end header-->
-	</header>
+        </div>
+        <!--end header-->
+	   </header>
 
 
    <!--start intro-->
 
    <div id="intro">
-   
+<!--    
      <div class="group_bannner_right">
         <img id="IMG1" src="images/picture.png" width="550" height="316"  alt="baner">
-     </div>
+     </div> -->
+     <div class="app_width">
      
      <header class="group_bannner_left">
-       <hgroup>
           <h1 id="lkk">Simple.Think. </h1>
+          <div class="clear"></div>
           <h2 id="ldkk">“The little things are infinitely the most important.“ 
           </h2>
-       </hgroup>
+          <div class="clear"></div>
      </header>
+
+ </div>
 
    </div>
    <!--end intro-->
 
    
      <!--start holder-->
-
-   <div class="holder_content">
+    <div id="holder_container">
+   <div class="holder_content" id="holder_content">
    
-   <section class="group1">
-   <h3>About us</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   <div class="group1 item">
+   <div class="title" id="about">About us</div>
+   <div class="clear"></div>
+    <p id="about_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
     <a href=""><span class="read_more">Read more...</span></a>
 
-  </section>
+  </div>
   
 
      
-   <section class="group2">
-   <h3>Services</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   <div class="group2 item">
+   <div class="title" id="services">Services</div>
+<div class="clear"></div>
+    <p id="services_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
   <a href=""><span class="read_more">Read more ...</span></a>
 
-  </section>
+  </div>
 
 
        
-   <section class="group3">
-   <h3>News</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+   <div class="group3 item">
+   <div class="title" id="news">News</div>
+   <div class="clear"></div>
+    <p id="news_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
   Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
   <a href=""><span class="read_more">Read more...</span></a>
 
-  </section>
-
+  </div>
+    
   
    </div>
+</div>
    <!--end holder-->
-   
+      
+   <!--start footer-->
+   <div id="footer">
+    <div class="app_width">  
+        <div id="FooterTwo"> © 2011 Think simple </div>
+        <div class="clear"></div>
+        <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a>
+        <div class="clear"></div>
+    </div> 
+   </div>
+   <input id="file-upload" type="file" style="display:none;"/>
+   </div>
+   <!--end footer-->
    
     </div>
    <!--end container-->
-   
-   <!--start footer-->
-   <footer>
-   <div class="container">  
-   <div id="FooterTwo"> © 2011 Think simple </div>
-   <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a>   </div> 
-   </div>
-   <input id="file-upload" type="file" style="display:none;"/>
-   </footer>
-   <!--end footer-->
+
 
  <script src="../includes/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-<link href="../includes/bootstrap/css/bootstrap.css" rel="stylesheet">
+
 <script src="../includes/bootstrap/js/bootstrap.js"></script>
-<link href="../includes/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+
 <script src="../includes/bootstrap-editable/js/bootstrap-editable.js"></script>
 <link href="../includes/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css"></link>
 <script src="../includes/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.min.js"></script>  
