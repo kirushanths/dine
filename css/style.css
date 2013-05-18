@@ -158,7 +158,7 @@ input {
 }
 
 /* http://matthewjamestaylor.com/blog/ultimate-2-column-left-menu-pixels.htm */
-.colmask { position:relative; clear:both; float:left; width:100%; overflow:hidden; }
+.colmask { position:relative; clear:both; float:left; width:100%; overflow:hidden; background:#333; }
 
 /* (left) has to equal .col1wrap and is the width of left column = left_col */
 .leftmenu .colright { float:left; width:200%; position:relative; left:270px; }
