@@ -34,11 +34,11 @@ $(function(){
   });
   */
 
-  $('#file-upload').change(function (e) { 
+  $('#file-upload').change(function (e) {  
       var filepath = document.getElementById('file-upload');
       var filename = filepath.value.substr(filepath.value.lastIndexOf("\\")+1);
       if (!file_id) return; 
-      $("#" + file_id).attr('src', 'img/' + filename);
+      $("#" + file_id).attr('src', 'images/' + filename);
       saveData(file_id, filename);
   });
 
@@ -113,13 +113,13 @@ function convert()
           var parentId = imgId + '-img'; 
           $(this).addClass('file-click');
           $(this).wrap("<div id='" + parentId + "' class='img-container'></div>");
-          $("<img class='img-upload' src='img/upload.png'></img>").insertBefore($(this));
+          $("<img class='img-upload' src='images/upload.png'></img>").insertBefore($(this));
         }
 
         var filename = getData(imgId); 
         if (filename)
         {
-          $(this).attr('src', 'img/' + filename);
+          $(this).attr('src', 'images/' + filename);
         }
       }
     } 
