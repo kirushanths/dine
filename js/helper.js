@@ -79,6 +79,12 @@ function convert()
 
           var height = $(this).height(); 
           var tag = parentId;
+          var savedText = getData(tag);
+          if (savedText != null)
+          {
+              text = savedText;
+              $(this).text(text);
+          }
 
           if (height > 240)
           {
@@ -222,10 +228,8 @@ function setupHtmlEditable(name, defaultData)
   setupEditable(name, defaultData, 'wysihtml5');
 }
 
-function setupEditable(name, defaultData, type)
+function setupEditable(name, text, type)
 {
-  var text = getData(name);
-  if (text == null) text = defaultData;  
   $('#' + name).editable({
       disabled: g_preview,
       type: type,
