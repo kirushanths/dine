@@ -50,8 +50,7 @@ input {
 -----------------------------------------------------------------------------*/
 #sideLeft {
    
-    background-image:url('../img/dashboard-bg.png');
-    background-size: contain;
+    background:#333;
     padding: 0 20 0 20px
 }
 
@@ -66,7 +65,7 @@ input {
     height: 50px; 
     position: relative;
     top: 15px;
-    left: 8px;
+    left: -10px;
 }
 
 /* Sidebar Buttons
@@ -79,8 +78,38 @@ input {
 }
 #sidebar_grid_button{
     padding-top: 50px;
-    padding-left: 21px;
+    padding-left: 2px;
 }
+
+.editor_buttons_2{
+    display:block;
+    width:150px;
+    height: 20px;
+    position: relative;
+    padding: 10px 15px;
+    background: #222;
+    top:59px;
+    left: -2px;
+    color: #FFF !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 11.5pt;
+    vertical-align: super;
+    line-height: 50px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.editor_buttons_2:hover, .editor_buttons_2:focus {
+    background: #305582;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+   
+}
+
 
 .editor_buttons{
     display:block;
@@ -88,27 +117,22 @@ input {
     height: 50px;
     position: relative;
     padding: 10px 15px;
-    background: #4479BA;
+    background: #222;
     color: #FFF !important;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    border: solid 1px #20538D;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
     font-size: 11.5pt;
     vertical-align: super;
     line-height: 50px;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
 
 .editor_buttons:hover, .editor_buttons:focus {
-    background: #356094;
+    background: #305582;
     border: solid 1px #2A4E77;
     text-decoration: none;
    
@@ -120,7 +144,7 @@ input {
     height: 20px;
     position: relative;
     padding: 10px 15px;
-    background: #4479BA;
+    background: #305582;
     color: #FFF !important;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -144,8 +168,34 @@ input {
    
 }
 
+.sidebar_buttons_2{
+    display:block;
+    width:150px;
+    height: 20px;
+    position: relative;
+    padding: 10px 15px;
+    background: #222;
+    color: #FFF !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    top: -13px;
+
+}
+.sidebar_buttons_2:hover, .sidebar_buttons_2:focus {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+   
+}
+
 #sidebar_button{
-    padding-left: 16px;
+    padding-left: 0px;
     padding-top: 72px;
 }
 
@@ -161,13 +211,13 @@ input {
 .colmask { position:relative; clear:both; float:left; width:100%; overflow:hidden; background:#333; }
 
 /* (left) has to equal .col1wrap and is the width of left column = left_col */
-.leftmenu .colright { float:left; width:200%; position:relative; left:270px; }
+.leftmenu .colright { float:left; width:200%; position:relative; left:220px; }
 /* (right) has to equal .colright and is the width of left column = left_col  */
-.leftmenu .col1wrap { float:right; width:50%; position:relative;right:270px; }
+.leftmenu .col1wrap { float:right; width:50%; position:relative;right:220px; }
 /* (margin) = 0 padding 0 left_col+padding  */
-.leftmenu .col1 { margin:0 0 0 270px; position:relative; right:100%; overflow:hidden; }
+.leftmenu .col1 { margin:0 0 0 220px; position:relative; right:100%; overflow:hidden; }
 /* one extra pixel on width to hide double border */
 /* (width) is left_col-2*padding and (right) is left_col-padding */
-.leftmenu .col2 { float:left; width:270px; position:relative; right:270px; }
+.leftmenu .col2 { float:left; width:220px; position:relative; right:220px; }
 
  
