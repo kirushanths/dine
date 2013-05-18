@@ -69,13 +69,16 @@ function convert()
       var parentId = $(this).attr('id');
       if (parentId)
       {
+        /*
           $(this).contents().filter(function() {
             return this.nodeType == 3; 
           }).remove();
+        */
+          //var tag = parentId + '-editable';
+          //addEditable(parentId, tag);
 
           var height = $(this).height(); 
-          var tag = parentId + '-editable';
-          addEditable(parentId, tag);
+          var tag = parentId;
 
           if (height > 240)
           {
