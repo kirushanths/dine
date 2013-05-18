@@ -254,7 +254,18 @@ h4 span{
 
 	}
 	
-	
+.group_bannner_left h1 {
+	font-weight:normal;
+	color:#452145;
+	font-size:54px;
+}
+.group_bannner_left h2 {
+	font-weight:normal;
+	color:#666;
+	font-size:17px;
+	padding:0;
+	margin:10px 0;
+}
 	
 	
 .group_bannner_left {
@@ -262,6 +273,7 @@ h4 span{
 float:left;
 padding:50px;
 padding-right:0;
+margin-top:50px;
 /*	position: absolute;
 	top:60px;
 	background:transparent;
