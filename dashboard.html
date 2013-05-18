@@ -21,27 +21,45 @@
 		return false;
 	}
 
-	$('#container').load('home.html');
+	$('#container').load('thinksimple/index.html');
 
 </script>
 	
 <div id="wrapper"> 
 	<div id="middle">
 
-	   	<div  id="container" src='home.html'> 
-	  	</div> 
+		<div class="colmask leftmenu">
+			<div class="colright">
+				<div class="col1wrap">
+					<div class="col1">
+						<!-- Column 2 start -->
+		
+						<iframe id="container" src='thinksimple/index.html'> 
+		  				</iframe> 
 
-		<div class="sidebar" id="sideLeft" menubar>
-			<br/><br/><br/> 
-			<ul class="nav nav-pills nav-stacked">
-			  <li id="menu1" class="active"><a href="#" onClick="changeFrame('#menu1', 'home.html')">Home</a> </li>
-			  <li id="menu2"><a hhef="#" onClick="changeFrame('#menu2', 'menu.html')">Menu</a></li>
-			  <li><a href="#">Gallery</a></li>
-			  <li><a href="#">Location</a></li> 
-			</ul>
-			<div align="center">
-				<button  onClick="preview()" class="btn">Preview</button>
-			</div> 
-		</div>  
+						<!-- Column 2 end -->
+					</div>
+				</div>
+				<div class="col2">
+					<!-- Column 1 start -->
+					
+					<div class="sidebar" id="sideLeft" menubar>
+						<br/><br/><br/> 
+						<ul class="nav nav-pills nav-stacked">
+						  <li id="menu1" class="active"><a href="#" onClick="changeFrame('#menu1', 'home.html')">Home</a> </li>
+						  <li id="menu2"><a hhef="#" onClick="changeFrame('#menu2', 'menu.html')">Menu</a></li>
+						  <li><a href="#">Gallery</a></li>
+						  <li><a href="#">Location</a></li> 
+						</ul>
+						<div align="center">
+							<button  onClick="preview()" class="btn">Preview</button>
+						</div> 
+					</div>  
+
+					<!-- Column 1 end -->
+				</div>
+			</div>
+		</div>
+
 	</div>  
 </div> 

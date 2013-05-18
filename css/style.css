@@ -57,4 +57,17 @@ input {
     padding: 0 20 0 20px
 }
 
+/* http://matthewjamestaylor.com/blog/ultimate-2-column-left-menu-pixels.htm */
+.colmask { position:relative; clear:both; float:left; width:100%; overflow:hidden; }
+
+/* (left) has to equal .col1wrap and is the width of left column = left_col */
+.leftmenu .colright { float:left; width:200%; position:relative; left:270px; }
+/* (right) has to equal .colright and is the width of left column = left_col  */
+.leftmenu .col1wrap { float:right; width:50%; position:relative;right:270px; }
+/* (margin) = 0 padding 0 left_col+padding  */
+.leftmenu .col1 { margin:0 0 0 270px; position:relative; right:100%; overflow:hidden; }
+/* one extra pixel on width to hide double border */
+/* (width) is left_col-2*padding and (right) is left_col-padding */
+.leftmenu .col2 { float:left; width:270px; position:relative; right:270px; }
+
  
