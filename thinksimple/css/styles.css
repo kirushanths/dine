@@ -628,3 +628,19 @@ nav ul li a.current{
 	margin-top:15px;
 }
 
+.img-container {
+    display: inline-block;
+    position: relative; 
+}
+
+.img-upload {  
+    position: absolute;
+    display: none; 
+    right:5px;
+    bottom:5px;
+    pointer-events:none;
+}
+.img-container:hover .img-upload{
+    display: block;
+}
+
