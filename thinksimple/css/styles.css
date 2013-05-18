@@ -188,6 +188,7 @@ h4 span{
 			text-align:left;
 			background-color:transparent;
 			padding:15px;
+			overflow: hidden;
 			
 }
 
@@ -258,10 +259,13 @@ h4 span{
 	
 .group_bannner_left {
 	width: 420px;
-	position: absolute;
+float:left;
+padding:50px;
+padding-right:0;
+/*	position: absolute;
 	top:60px;
 	background:transparent;
-	margin-top:6px;
+	margin-top:6px;*/
 	/*margin-left:-40px;*/
 	
 	
@@ -269,11 +273,14 @@ h4 span{
 	
 .group_bannner_right{
 	width: 380px;
-	position: absolute;
+	float:right;
+	padding:50px;
+	padding-left:0;
+/*	position: absolute;
 	top:-37px;
 	right:170px;
 	background:transparent;
-	margin-top:50px;
+	margin-top:50px;*/
 	
 	
 	}
@@ -299,9 +306,10 @@ header{
 	width: 960px;
 	position: relative;
 	float: left;
+	overflow:hidden;
 	height:318px;
-	padding:10px;
-	background:transparent;
+	padding:0px;
+	background:rgba(40, 40, 40, 0.1);
 	margin-top:17px;
 
 
@@ -447,7 +455,7 @@ footer{
 	width:100%;
 	margin-bottom:18px;
 	background-color:#663366;
-	
+	margin-top:25px;
 
 	}
 
@@ -510,10 +518,10 @@ nav ul li a{
 	text-transform:capitalize;
 	font-weight:normal;
 	display:block;	/* IE6, IE7 line height fix */
-	padding:15px;
+	padding:10px;
 	background-color:transparent;
 	margin-top:0px;
-	margin-right:6px;
+	margin-right:10px;
     text-decoration:none;
 	
 
@@ -526,10 +534,8 @@ nav ul li a:hover{
 }
 nav ul li a.current{
 	background-color:#00CCFF;
-	padding:15px;
+	padding:10px;
 	color:white;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
 
 
 }
