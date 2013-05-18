@@ -59,7 +59,7 @@ function setup()
 }
 
 function convert()
-{  
+{   
   $("*").filter(function()
   { 
     var text = $(this).clone().children().remove().end().text();
