@@ -1,4 +1,6 @@
-
+<link href="css/style.css" rel="stylesheet" type="text/css"></link>
+<link href="includes/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+<script src="includes/bootstrap/js/bootstrap.js"></script>
 <script> 
 
 	function preview()
@@ -21,7 +23,7 @@
 		return false;
 	}
 
-	$('#container').load('thinksimple/index.html');
+	$('#container').load('thinksimple');
 
 </script>
 	
@@ -54,10 +56,10 @@
 			<div id="sidebar_grid_button">
 				<div class="button_row">
 					<div>
-						<a class="editor_buttons grid_1" href="#">Home</a>
+						<a class="editor_buttons grid_1">Home</a>
 					</div>
 					<div>
-						<a class="editor_buttons grid_2" href="#">Menu</a>
+						<a class="editor_buttons grid_2">Menu</a>
 					</div>
 				</div>	
 				<br/>
@@ -67,29 +69,29 @@
 
 				<div class="button_row">
 					<div>
-						<a class="editor_buttons grid_1" href="#">Gallery</a>
+						<a class="editor_buttons grid_1">Gallery</a>
 					</div>
 					<div>
-						<a class="editor_buttons grid_2" href="#">Contact</a>
+						<a class="editor_buttons grid_2">Contact</a>
 					</div>
 				</div>  
 			</div>
 
 			<div id="sidebar_button">
 				<div>
-					<a class="sidebar_buttons_2" href="#">Preview</a>
+					<a class="sidebar_buttons_2" ng-click="preview()">Preview</a>
 <!--				<button  onClick="preview()" class="btn">Preview</button> -->
 					</div>
 				<div id="plans_btn">
-					<a class="sidebar_buttons" href="#">Plans & Pricing</a>
+					<a class="sidebar_buttons">Plans & Pricing</a>
 				</div>
 				<br/>
 				<div id="plans_accounting">
-					<a class="sidebar_buttons" href="#">Account</a>
+					<a class="sidebar_buttons">Account</a>
 				</div>
 				<br/>
 				<div id="plans_sign_out">
-					<a class="sidebar_buttons" href="#">Sign Out</a>
+					<a class="sidebar_buttons">Sign Out</a>
 				</div>
 			</div>
 			<!--<br/><br/><br/> 

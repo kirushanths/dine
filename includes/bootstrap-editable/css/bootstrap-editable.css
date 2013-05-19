@@ -163,8 +163,7 @@ a.editable-click:hover {
 
 .editable-click.editable-disabled, 
 a.editable-click.editable-disabled, 
-a.editable-click.editable-disabled:hover {
-   color: #585858;  
+a.editable-click.editable-disabled:hover { 
    cursor: default;
    border-bottom: none;
 }

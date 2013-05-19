@@ -6,7 +6,7 @@ var app = angular.module('dine', []);
 
 app.config(function($routeProvider) {
 
-    var template = 'dashboard.html';
+    var template = 'landing.html';
     var sURL = window.document.URL.toString();
     if (sURL.indexOf("?preview") > 0)
     {
@@ -15,12 +15,26 @@ app.config(function($routeProvider) {
 
     $routeProvider.
       when('/', {controller: mainController, templateUrl:template}).   
+      when('/dashboard', {controller: mainController, templateUrl: 'dashboard.html'}).
+      when('/preview', {controller: mainController, templateUrl: 'thinksimple/index.html'}).
       otherwise({redirectTo:'/'});
   });
 
 var g_currentView = 0; 
 
-function mainController($scope) {
+function mainController($scope, $location) {
+
+  $scope.enterDashboard = function()
+  {  
+      $location.path('/dashboard');
+  }
+
+  $scope.preview = function()
+  {
+      window.open('thinksimple/index.html?preview','_blank');
+      //$location.path('/preview');
+
+  }
 
   $scope.data = function(key) {  
       var data = getData(key); 
@@ -34,9 +48,12 @@ function mainController($scope) {
   }
   $scope.getView = function()
   { 
+    return "thinksimple/index.html";
+    /*
     if (g_currentView == 0)
       return "home.html";
     else if (g_currentView == 1)
       return "location.html";
+    */
   }
 }    
