@@ -86,7 +86,7 @@ function convert()
               $(this).text(text);
           }
 
-          if (height > 240)
+          if (height > 200)
           {
             setupHtmlEditable(tag,text);
           }

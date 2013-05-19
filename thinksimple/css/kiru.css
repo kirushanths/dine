@@ -79,6 +79,12 @@ body { font-family:'Lucida Grande'; background:#333; }
     /* (width) is left_col-2*padding and (right) is left_col-padding */
     .leftmenu .col2 { float:left; width:128px; position:relative; right:128px; }
 
+    /* 2 column right menu settings */
+    .rightmenu .colleft { float:left; width:200%; margin-left:-300px; position:relative; right:100%; }
+    .rightmenu .col1wrap { float:left; width:50%; position:relative; left:50%; }
+    .rightmenu .col1 { margin:0 0px 0 300px; overflow:hidden; }
+    .rightmenu .col2 { float:right; width:300px; position:relative; left:300px; }
+
 	.clear { clear:both; }
 
     #header { height:60px; background:#333; overflow:hidden; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -135,11 +141,16 @@ body { font-family:'Lucida Grande'; background:#333; }
 .group_text { 
     font-size:16px;
     text-align:center;
-    font-color:#404040;
 }
 .group_img {  
     display: block;
     margin: 0 auto;
     padding-bottom:26px;
 }
+
+#testys { height:350px; }
+#balls { width:1060px; margin:0 auto; }
+#testimonial { font-size:16px; padding:10px 60px 0 70px; color:#666; }
+#addicted { height:220px; padding-left: 0px; padding-top:10px; }
+#face { padding-right:30px; }
  
