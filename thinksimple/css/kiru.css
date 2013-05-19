@@ -81,7 +81,7 @@ body { font-family:'Lucida Grande'; background:#333; }
 
 	.clear { clear:both; }
 
-    #header { height:60px; background:#333; overflow:hidden; }
+    #header { height:60px; background:#333; overflow:hidden; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; }
 	#logo { display:block; float:left; margin-left:25px; }
 	#img2 { height:40px; margin-top:10px; }
 
