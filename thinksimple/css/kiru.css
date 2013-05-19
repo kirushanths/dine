@@ -116,12 +116,23 @@ body { font-family:'Lucida Grande'; background:#333; }
 	.group_bannner_left h2 { font-weight:normal; font-size:20px; color:white; float:left; clear:both; margin:0; padding-top:0px; }
 	.group_bannner_left h1 { font-weight:normal; font-size:54px; color:#ccc; float:left; font-weight:bold; }
 
-	#holder_container { background:white; }
+	#holder_container { background:white; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; padding-top:30px;  padding-bottom:70px;}
 	#holder_content { overflow:hidden; margin:0 auto; width:1060px; padding:20px 0; }
 	#holder_content .item { width:300px; background:white; float:left; margin-right:10px; padding:15px; border:1px solid #eee; border-radius:3px; color:#666; }
-	#holder_content .item .title { font-size:20px; margin-bottom: 10px; color:#333; float:left; }
+	#holder_content .item .title { font-size:32px; margin-bottom: 20px; color:#333; text-align:center; width:100%}
 
 	#footer { background:#333; overflow:hidden; padding:15px 25px; color:white; }
 	#FooterTwo { float:left; }
 	#FooterTree { float:left; }
 
+.group_text { 
+    font-size:16px;
+    text-align:center;
+    font-color:#404040;
+}
+.group_img {  
+    display: block;
+    margin: 0 auto;
+    padding-bottom:30px;
+}
+ 

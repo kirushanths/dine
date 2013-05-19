@@ -112,8 +112,8 @@ function convert()
         { 
           var parentId = imgId + '-img'; 
           $(this).addClass('file-click');
-          $(this).wrap("<div id='" + parentId + "' class='img-container'></div>");
-          $("<img class='img-upload' src='images/upload.png'></img>").insertBefore($(this));
+          // $(this).wrap("<div id='" + parentId + "' class='img-container'></div>"); 
+          //$("<img class='img-upload' src='images/upload.png'></img>").insertBefore($(this));
         }
 
         var filename = getData(imgId); 
