@@ -38,11 +38,11 @@
 
     	<nav>
         <ul>
-        <li><a href="#" id="home_nav" class="current">Home</a>
+        <li><a href="#" id="home_nav">Home</a>
 
     	</li>
-        <li><a href="#" id="menu_nav">Menu</a></li>
-        <li><a href="#" id="gallery_nav">Gallery</a></li>
+        <li><a href="#" id="menu_nav" class="current">Features</a></li>
+        <li><a href="#" id="gallery_nav">Story</a></li>
         <li><a href="#" id="about_nav">Contact</a></li>
         </ul>
         </nav>
@@ -121,6 +121,14 @@
 <script src="../includes/inputs-ext/wysihtml5/wysihtml5.js"></script>  
 <script src="../includes/sessvars.js"></script>
 <script src="../js/helper.js"></script>
-   
+<script>
+if (g_preview)
+{
+     $("#home_nav").on("click",function()
+      {
+              document.location.href = "index.html?preview"
+      });
+}
+</script>
 <!-- Free template distributed by http://freehtml5templates.com -->   
    </body></html>
