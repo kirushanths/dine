@@ -117,7 +117,7 @@ body { font-family:'Lucida Grande'; background:#333; }
 	.group_bannner_left h1 { font-weight:normal; font-size:54px; color:#ccc; float:left; font-weight:bold; }
     .group_bannner_left img { }
     #hand{position: relative; bottom: 518px; left: 587px}
-    #ios_image_mini {position: absolute; left: 9px; top: 80px;}
+    #ios_image_mini {position: absolute; left: 12px; top: 80px;}
     
 	#holder_container { background:white; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; padding-top:30px;}
 	#holder_content { overflow:hidden; margin:0 auto; width:1060px; padding:20px 0; }
