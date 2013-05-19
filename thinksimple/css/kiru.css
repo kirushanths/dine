@@ -110,9 +110,9 @@ body { font-family:'Lucida Grande'; background:#333; }
 	nav ul li a:hover { color:#ccc; }
 	nav ul li a.current { background-color:#1571B8; color:white; border-radius:2px; }
 
-	#intro { background:url('../images/bg.jpg') black; height:350px; overflow:hidden; background-color:rgba(0, 0,0,0.5); }
+	#intro { background:url('../images/background1.jpg') black; height:450px; overflow:hidden;}
 
-	.group_bannner_left { padding-top:170px; height:350px; color:white; background:rgba(0, 0,0,0.5); padding-left:30px; }
+	.group_bannner_left { padding-top:170px; height:350px; color:white; padding-left:30px; }
 	.group_bannner_left h2 { font-weight:normal; font-size:20px; color:white; float:left; clear:both; margin:0; padding-top:0px; }
 	.group_bannner_left h1 { font-weight:normal; font-size:54px; color:#ccc; float:left; font-weight:bold; }
 
