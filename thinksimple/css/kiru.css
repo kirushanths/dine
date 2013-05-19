@@ -113,9 +113,13 @@ body { font-family:'Lucida Grande'; background:#333; }
 	#intro { background:url('../../img/new_york.jpg') black; height:614px; overflow:hidden;}
 
 	.group_bannner_left { padding-top:170px; height:350px; color:white; padding-left:30px; }
-	.group_bannner_left h2 { font-weight:normal; font-size:20px; color:white; float:left; clear:both; margin:0; padding-top:0px; }
+	.group_bannner_left h2 { font-weight:normal; font-size:24px; width: 350px; color:white; float:left; clear:both; margin:0; padding-top:0px; }
 	.group_bannner_left h1 { font-weight:normal; font-size:54px; color:#ccc; float:left; font-weight:bold; }
-    .group_bannner_left img { }
+    .group_bannner_left img {top: 159px; }
+    .group_bannner_left h2 {margin-top: 23px; }
+
+
+
     #hand{position: relative; bottom: 518px; left: 587px}
     #ios_image_mini {position: absolute; left: 12px; top: 80px;}
     
