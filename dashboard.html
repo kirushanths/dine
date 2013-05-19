@@ -15,15 +15,15 @@
 
 	function changeFrame(menu, page){  
 		
-		$("[id^='menu']").removeClass('active');
+		$("[id^='editor_buttons']").removeClass('active');
 		$(menu).addClass('active'); 
 		//$("#container").attr("src", page); 
 		
-		$("#container").load(page);
+		$("#container").attr("src", page);
 		return false;
 	}
 
-	$('#container').load('thinksimple');
+	//$('#container').load('thinksimple');
 
 </script>
 	
@@ -56,10 +56,10 @@
 			<div id="sidebar_grid_button">
 				<div class="button_row">
 					<div>
-						<a class="editor_buttons grid_1">Home</a>
+						<a class="editor_buttons grid_1" href="thinksimple/index.html" target="container">Home</a>
 					</div>
 					<div>
-						<a class="editor_buttons grid_2">Menu</a>
+						<a class="editor_buttons grid_2" href="thinksimple/menu.html" target="container">Features</a>
 					</div>
 				</div>	
 				<br/>
@@ -69,7 +69,7 @@
 
 				<div class="button_row">
 					<div>
-						<a class="editor_buttons grid_1">Gallery</a>
+						<a class="editor_buttons grid_1">Story</a>
 					</div>
 					<div>
 						<a class="editor_buttons grid_2">Contact</a>
