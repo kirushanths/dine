@@ -67,7 +67,7 @@
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
-    /* Carousel base class */
+    /* Carousel base class 
     .carousel {
       margin-bottom: 60px;
     }
@@ -114,7 +114,7 @@
     }
     .carousel-caption .btn {
       margin-top: 10px;
-    }
+    } */
 
 
 
@@ -180,13 +180,13 @@
         margin: -20px 0;
       }
 
-      .carousel .item {
+  /*    .carousel .item {
         height: 500px;
       }
       .carousel img {
         width: auto;
         height: 500px;
-      }
+      } */
 
       .featurette {
         height: auto;
@@ -208,7 +208,7 @@
         margin: -20px;
       }
 
-      .carousel {
+    /*  .carousel {
         margin-left: -20px;
         margin-right: -20px;
       }
@@ -232,7 +232,7 @@
       .carousel-caption .lead,
       .carousel-caption .btn {
         font-size: 18px;
-      }
+      } */
 
       .marketing .span4 + .span4 {
         margin-top: 40px;
@@ -290,13 +290,68 @@
      background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
+  .sidebar_buttons{
+    display:block;
+    width:150px;
+    height: 20px;
+    position: relative;
+    padding: 10px 15px;
+    background: #305582;
+    color: #FFF !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+
+
+}
+.sidebar_buttons:hover, .sidebar_buttons:focus {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+   
+}
+#sideLeft {
+   
+}
+#cssmenu{
+  float: left;
+}
+#thumbnail_modal{
+  float: right;
+  background-image:url('img/slide-01.jpg');
+  background-size:409px 255px;
+  background-repeat:no-repeat;
+  width: 409px;
+  height: 255px;
+
+
+}
+
+.left{
+  left: 162px !important;
+}
+
+
+
+
+
     </style>
 
   </head>
 
   <body>
     <!-- Modal -->
-<div class="modal hide" id="myModal">
+<!--<div class="modal hide" id="myModal">
   <div class="modal-header">
     <button class="close" data-dismiss="modal">×</button>
     <h3>Modal header</h3>
@@ -306,6 +361,27 @@
       >
     </a>
 </div>
+-->
+
+    <div class="modal hide" id="myModal">
+      <div>
+        <div id="thumbnail_modal">
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+
+        <div id='cssmenu'>
+          <ul>
+            <li><a href='#'><span>Most Popular</span></a></li>
+            <li><a href='#'><span>Small Business</span></a></li>
+            <li><a href='#'><span>Personal</span></a></li>
+            <li><a href='#'><span>Restaurants</span></a></li>
+            <li class='last'><a href='#'><span>Mobile</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 
   	<div class="first">
   		<div class="hero-unit first-section" >
@@ -365,6 +441,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
   </body>
       <script src="includes/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+      <link href="css/menu_assets/styles.css" rel="stylesheet" type="text/css">
     <link href="includes/bootstrap/css/bootstrap.css" rel="stylesheet">
 <script src="includes/bootstrap/js/bootstrap.js"></script>
     <script>
