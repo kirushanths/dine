@@ -119,7 +119,7 @@ body { font-family:'Lucida Grande'; background:#333; }
     #hand{position: relative; bottom: 518px; left: 587px}
     #ios_image_mini {position: absolute; left: 9px; top: 80px;}
     
-	#holder_container { background:white; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; padding-top:30px;  padding-bottom:70px;}
+	#holder_container { background:white; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; padding-top:30px;}
 	#holder_content { overflow:hidden; margin:0 auto; width:1060px; padding:20px 0; }
 	#holder_content .item { width:300px; background:white; float:left; margin-right:10px; padding:15px; border:1px solid #eee; border-radius:3px; color:#666; }
 	#holder_content .item .title { font-size:32px; margin-bottom: 20px; color:#333; text-align:center; width:100%}
