@@ -110,7 +110,7 @@ body { font-family:'Lucida Grande'; background:#333; }
 	nav ul li a:hover { color:#ccc; }
 	nav ul li a.current { background-color:#1571B8; color:white; border-radius:2px; }
 
-	#intro { background:url('../images/background1.jpg') black; height:450px; overflow:hidden;}
+	#intro { background:url('../../img/new_york.jpg') black; height:614px; overflow:hidden;}
 
 	.group_bannner_left { padding-top:170px; height:350px; color:white; padding-left:30px; }
 	.group_bannner_left h2 { font-weight:normal; font-size:20px; color:white; float:left; clear:both; margin:0; padding-top:0px; }
