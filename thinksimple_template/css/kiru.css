@@ -145,8 +145,7 @@ body { font-family:'Lucida Grande'; background:#333; }
 .group_img {  
     display: block;
     margin: 0 auto;
-    margin-bottom:26px;
-    height:140px;
+    padding-bottom:26px;
 }
 
 #testys { height:350px; }
