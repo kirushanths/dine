@@ -18,7 +18,7 @@ $(function(){
 
       });
 
-    },0); 
+    },1); 
   } 
 
   /*
@@ -83,11 +83,11 @@ function convert()
           if (savedText != null)
           {
               text = savedText;
-              $(this).text(text);
+              $(this).html(text);
           }
 
           if (height > 200)
-          {
+          { 
             setupHtmlEditable(tag,text);
           }
           else if (height > 80)
